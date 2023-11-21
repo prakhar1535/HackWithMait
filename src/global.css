@@ -7,3 +7,13 @@
 *{
 font-family: 'Poppins', sans-serif;
 }
+
+
+body{
+  background: url(./back.png);
+  background-position-y: 14%;
+  background-position-x: 43%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

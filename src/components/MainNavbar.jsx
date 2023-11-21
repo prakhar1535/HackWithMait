@@ -3,35 +3,37 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-r from-purple-500 to-indigo-500 p-4 relative rounded-lg">
-      <div className="absolute inset-0 backdrop-blur"></div>
+  <div className='flex justify-center content-center'>
+    <nav style={{ filter: 'blur(10)', width: '70% ', borderRadius: '50px' , border: '1px solid black'}} className="mt-5  p-4 relative rounded-lg">
+      <div className="absolute inset-0"></div>
       <div className="container mx-auto flex items-center justify-between relative">
         {/* Logo on the left */}
-        <div className="text-white font-bold text-xl rounded-lg p-2">
+        <div className="text-black font-bold text-xl ml-5 rounded-full p-2">
           Your Logo
         </div>
 
         {/* Navigation Links in the center */}
         <div className="hidden md:flex flex-grow justify-center space-x-4">
-          <a href="#" className="text-white">Home</a>
-          <a href="#" className="text-white">About</a>
-          <a href="#" className="text-white">Services</a>
-          <a href="#" className="text-white">Contact</a>
+          <a href="#" className="text-black">Home</a>
+          <a href="#" className="text-black">About</a>
+          <a href="#" className="text-black">Services</a>
+          <a href="#" className="text-black">Contact</a>
         </div>
 
         {/* Sign In option on the right */}
-        <div className="md:flex items-center space-x-4">
-          <a href="#" className="text-white">Sign In</a>
+        <div style={{border: '1px solid black'}} className="md:flex rounded-full bg-white items-center space-x-4 mr-8">
+          <a href="#" style={{transition: "ease-in 0.3s"}} className="px-6 py-3 rounded-full hover:bg-indigo-900 text-black hover:text-white">Sign In</a>
 
           {/* Responsive Menu Button */}
           <div className="md:hidden">
-            <button className="text-white">
+            <button className="text-black">
               <i className="fas fa-bars"></i>
             </button>
           </div>
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
