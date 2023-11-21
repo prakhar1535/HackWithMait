@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
   return (
   <div className='flex justify-center content-center'>
-    <nav style={{ filter: 'blur(10)', width: '70% ', borderRadius: '50px' , border: '1px solid black'}} className="mt-5  p-4 relative rounded-lg">
+    <nav style={{ filter: 'blur(10)', width: '70% ', borderRadius: '50px' , border: '1px solid black',backdropFilter: 'blur(50.5px)'}} className="mt-5  p-4 relative rounded-lg">
       <div className="absolute inset-0"></div>
       <div className="container mx-auto flex items-center justify-between relative">
         {/* Logo on the left */}
