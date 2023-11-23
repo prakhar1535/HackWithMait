@@ -2,6 +2,9 @@
 import React from 'react';
 
 const Navbar = () => {
+  
+  
+  
   return (
   <div className='flex justify-center content-center'>
     <nav style={{ filter: 'blur(10)', width: '70% ', borderRadius: '50px' , border: '1px solid black',backdropFilter: 'blur(50.5px)'}} className="mt-5  p-4 relative rounded-lg">
@@ -14,10 +17,11 @@ const Navbar = () => {
 
         {/* Navigation Links in the center */}
         <div className="hidden md:flex flex-grow justify-center space-x-4">
-          <a href="#" className="text-black">Home</a>
-          <a href="#" className="text-black">About</a>
-          <a href="#" className="text-black">Services</a>
-          <a href="#" className="text-black">Contact</a>
+          <button onClick={()=>window.location="/"}  className="text-black">Home</button>
+          <button onClick={()=>window.location="/explore"} className="text-black">About</button>
+          <button onClick={()=>window.location="/nft"} className="text-black">3D NFTs</button>
+          <button onClick={()=>window.location="/workspace"}  className="text-black">Ar Workspace</button>
+          {/* <a href="#" className="text-black"></a> */}
         </div>
 
         {/* Sign In option on the right */}

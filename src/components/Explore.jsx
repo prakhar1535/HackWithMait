@@ -1,9 +1,12 @@
 import React from 'react';
+import ExploreUs3d from './ExploreUs3d';
+
 
 const ExploreUsPage = () => {
   return (
     <div className="container mx-auto mt-16">
       {/* Virtual Hackathons Section */}
+      <ExploreUs3d/>
       <section className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">Virtual Hackathons</h2>
         <p className="text-lg mb-4">
@@ -13,10 +16,13 @@ const ExploreUsPage = () => {
         <div className="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-xl overflow-hidden shadow-lg">
           <video
             className="w-full h-auto"
-            controls
+            // controls
+          loop
+          autoPlay
+          muted
           >
             <source
-              src="your_video_url.mp4"
+              src="maitLibrary.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -35,6 +41,7 @@ const ExploreUsPage = () => {
           <video
             className="w-full h-auto"
             controls
+            autoPlay
           >
             <source
               src="your_video_url.mp4"
@@ -64,4 +71,4 @@ const ExploreUsPage = () => {
   );
 };
 
-export default ExploreUsPage;
+export default ExploreUsPage
