@@ -38,17 +38,7 @@ const ExploreUsPage = () => {
         </p>
         {/* Video for Reference */}
         <div className="w-full md:w-3/4 lg:w-1/2 mx-auto rounded-xl overflow-hidden shadow-lg">
-          <video
-            className="w-full h-auto"
-            controls
-            autoPlay
-          >
-            <source
-              src="your_video_url.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <img src="/d.jpg" alt="" className='w-full h-auto' />
         </div>
       </section>
 

@@ -20,7 +20,8 @@ const Navbar = () => {
           <button onClick={()=>window.location="/"}  className="text-black">Home</button>
           <button onClick={()=>window.location="/explore"} className="text-black">About</button>
           <button onClick={()=>window.location="/nft"} className="text-black">3D NFTs</button>
-          <button onClick={()=>window.location="/workspace"}  className="text-black">Ar Workspace</button>
+          <button onClick={() => window.open("https://codingpanda252.github.io/XRAcademy/arlearning.html", "_blank")} className="text-black">AR Learning</button>
+
           {/* <a href="#" className="text-black"></a> */}
         </div>
 
